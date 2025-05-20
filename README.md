@@ -27,3 +27,6 @@ Videos are unique in their integration of temporal elements, including camera, s
     Detailed statistics for <span class="dataset-ref"></span>, including: number of videos (<b>#Videos</b>), video duration (<b>Duration</b>), number of events (<b>#Events</b>), number of visual elements in captions (<b>#Elements (Narrative-level)</b>), number of visual elements in events (<b>#Elements (Narrative-level)</b>), number of tokens of caption (<b>#Tokens</b>).
 </p>
 
+## ⚖ Evaluation
+
+We are organizing the paper, data and code, which are expected to be released this month.
