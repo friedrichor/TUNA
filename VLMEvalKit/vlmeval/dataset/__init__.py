@@ -43,6 +43,7 @@ from .megabench import MEGABench
 from .moviechat1k import MovieChat1k
 from .video_mmlu import VideoMMLU_CAP, VideoMMLU_QA
 from .vdc import VDC
+from .tuna import TUNA_CAP, TUNA_MCQ
 
 from .worldsense import WorldSense
 from .qbench_video import QBench_Video, QBench_Video_MCQ, QBench_Video_VQA
@@ -175,7 +176,8 @@ VIDEO_DATASET = [
     TempCompass, TempCompass_MCQ, TempCompass_Captioning, TempCompass_YorN,
     CGBench_MCQ_Grounding_Mini, CGBench_OpenEnded_Mini, CGBench_MCQ_Grounding, CGBench_OpenEnded,
     QBench_Video, QBench_Video_MCQ, QBench_Video_VQA,
-    VideoMMLU_CAP, VideoMMLU_QA
+    VideoMMLU_CAP, VideoMMLU_QA, 
+    TUNA_CAP, TUNA_MCQ,
 ]
 
 TEXT_DATASET = [

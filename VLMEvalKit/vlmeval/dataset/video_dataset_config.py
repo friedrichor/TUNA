@@ -155,12 +155,24 @@ video_mmlu_dataset = {
     'VideoMMLU_QA_64frame': partial(VideoMMLU_QA, dataset='Video_MMLU_QA', nframe=64),
 }
 
+tuna_dataset = {
+    'TUNA_CAP_16frame': partial(TUNA_CAP, dataset='TUNA_CAP', nframe=16),
+    'TUNA_CAP_32frame': partial(TUNA_CAP, dataset='TUNA_CAP', nframe=32),
+    'TUNA_CAP_1fps': partial(TUNA_CAP, dataset='TUNA_CAP', fps=1.0),
+    'TUNA_CAP_2fps': partial(TUNA_CAP, dataset='TUNA_CAP', fps=2.0),
+    'TUNA_MCQ_16frame': partial(TUNA_MCQ, dataset='TUNA_MCQ', nframe=16),
+    'TUNA_MCQ_32frame': partial(TUNA_MCQ, dataset='TUNA_MCQ', nframe=32),
+    'TUNA_MCQ_1fps': partial(TUNA_MCQ, dataset='TUNA_MCQ', fps=1.0),
+    'TUNA_MCQ_2fps': partial(TUNA_MCQ, dataset='TUNA_MCQ', fps=2.0),
+}
+
 supported_video_datasets = {}
 
 dataset_groups = [
     mmbench_video_dataset, mvbench_dataset, videomme_dataset, longvideobench_dataset,
     mlvu_dataset, tempcompass_dataset, cgbench_dataset, worldsense_dataset, tamperbench_dataset,
-    megabench_dataset, qbench_video_dataset, moviechat1k_dataset, vdc_dataset
+    megabench_dataset, qbench_video_dataset, moviechat1k_dataset, vdc_dataset,
+    tuna_dataset
 
 ]
 

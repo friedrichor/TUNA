@@ -34,6 +34,10 @@ Videos are unique in their integration of temporal elements, including camera, s
 
 coming soon.
 
+## Acknowledgments
+
+The code is largely based on the [VLMEvalKit](https://github.com/open-compass/VLMEvalKit). We thank the authors for their great work.
+
 ## 📋 Citation
 
 If you find our work helpful, feel free to give us a cite.

@@ -37,3 +37,7 @@ transformers
 typing_extensions
 validators
 xlsxwriter
+
+# supplement for tuna
+decord
+pyarrow
