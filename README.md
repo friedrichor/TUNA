@@ -21,8 +21,6 @@ Videos are unique in their integration of temporal elements, including camera, s
 
 <p align="center">
     <img src="./asserts/dataset_statistics.png" width="60%">
-    <br>
-    Detailed statistics for <span class="dataset-ref"></span>, including: number of videos (<b>#Videos</b>), video duration (<b>Duration</b>), number of events (<b>#Events</b>), number of visual elements in captions (<b>#Elements (Narrative-level)</b>), number of visual elements in events (<b>#Elements (Narrative-level)</b>), number of tokens of caption (<b>#Tokens</b>).
 </p>
 
 
@@ -32,7 +30,51 @@ Videos are unique in their integration of temporal elements, including camera, s
 
 ## ⚖️ Evaluation
 
-coming soon.
+### Installation
+
+```
+cd VLMEvalKit
+pip install -e .
+```
+
+### TUNA-CAP (Video Captioning)
+
+You can run inference for TUNA-CAP using VLMEvalKit:
+
+```bash
+bash scripts/infer_tuna_cap.sh
+## Equivalent to:
+# cd VLMEvalKit
+# bash scripts_tuna/infer_tuna_cap.sh
+```
+
+This will generate an output file, such as: `VLMEvalKit/outputs/MODEL/T2025xxx/MODEL_TUNA_CAP_1fps.xlsx`.  
+
+To convert the above inference result into the standard JSON format required for submission and evaluation:
+
+```bash
+python evaluation/infer_result_to_submission.py
+```
+
+You can refer to the example submission format here: `evaluation/example/MyModel_TUNA_CAP_1fps_submission.json`.
+
+Finally, evaluate TUNA-CAP and obtain the score:
+
+```bash
+bash scripts/eval_tuna_cap.sh
+```
+
+> **Note**: Due to the stochastic nature of some evaluation steps — primarily caused by the variability of API-based models and randomness in text generation — the scores for individual instances may slightly differ between evaluation runs. However, our evaluation framework ensures that the average performance across the entire TUNA-CAP dataset remains robust and statistically significant.
+
+
+### TUNA-MCQ (Video Multi-Choice QA)
+
+To evaluate TUNA-MCQ, simply run:
+
+```bash
+cd VLMEvalKit
+bash scripts_tuna/eval_tuna_mcq.sh
+```
 
 ## Acknowledgments
 
