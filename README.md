@@ -8,19 +8,14 @@
 
 Videos are unique in their integration of temporal elements, including camera, scene, action, and attribute, along with their dynamic relationships over time. However, existing benchmarks for video understanding often treat these properties separately or narrowly focus on specific aspects, overlooking the holistic nature of video content. To address this, we introduce TUNA, a temporal-oriented benchmark for fine-grained understanding on dense dynamic videos, with two complementary tasks: captioning and QA. Our TUNA features diverse video scenarios and dynamics, assisted by interpretable and robust evaluation criteria. We evaluate several leading models on our benchmark, providing fine-grained performance assessments across various dimensions. This evaluation reveals key challenges in video temporal understanding, such as limited action description, inadequate multi-subject understanding, and insensitivity to camera motion, offering valuable insights for improving video understanding models.
 
+## 🔍 Dataset
+
+<p align="center">
+    <img src="./asserts/construction_dataset.png" width="90%">
+</p>
 
 <p align="center">
     <img src="./asserts/comparison_overall.png" width="90%">
-    <br>
-    Comparison with various video understanding benchmarks across several aspects: number of videos (<b>#Videos</b>); number of samples (<b>#Samp.</b>); annotation method (<b>Anno.</b>, with M/A denoting manual/automatic); domain (<b>Domain</b>); temporal orientation (<b>Temporal Orientated</b>); presence of scene transitions (<b>Scene Trans.</b>); consideration of camera (<b>Camera</b>) and scene (<b>Scene</b>); use of keypoints (<b>Key.</b>) for controllability and interpretability; Judgement of semantically identical yet diverse representations (<b>Sem.</b>); availability of multi-dimensional scores (<b>M.D.</b>); if global (<b>Global</b>) and fine-grained (<b>Fine.</b>) understanding are concerned.
-</p>
-
-
-## 🔍 Dataset
-
-
-<p align="center">
-    <img src="./asserts/dataset_statistics.png" width="60%">
 </p>
 
 
